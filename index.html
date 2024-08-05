@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Speech Translator</h1>
+        
+        <div class="language-selection">
+            <label for="input-lang">Select input language:</label>
+            <select id="input-lang">
+                <option value="en">English</option>
+                <option value="mr">Marathi</option>
+                <option value="hi">Hindi</option>
+                <option value="ml">Malayalam</option>
+                <option value="ta">Tamil</option>
+                <option value="te">Telugu</option>
+            </select>
+
+            <label for="output-lang">Select output language:</label>
+            <select id="output-lang">
+                <option value="en">English</option>
+                <option value="mr">Marathi</option>
+                <option value="hi">Hindi</option>
+                <option value="ml">Malayalam</option>
+                <option value="ta">Tamil</option>
+                <option value="te">Telugu</option>
+            </select>
+        </div>
+
+        <button id="speak-btn">Speak</button>
+
+        <div class="text-areas">
+            <textarea id="recognized-text" placeholder="Recognized speech will appear here..." readonly></textarea>
+            <textarea id="translated-text" placeholder="Translated text will appear here..." readonly></textarea>
+        </div>
+
+        <div class="actions">
+            <button id="clear-btn">Clear</button>
+            <button id="copy-btn">Copy</button>
+        </div>
+
+        <div id="message" class="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
